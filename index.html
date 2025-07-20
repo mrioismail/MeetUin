@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>MeetUin - Solusi Booking Digital untuk Bisnis Anda</title>
+      <meta name="description" content="MeetUin menyediakan solusi aplikasi booking digital terlengkap untuk berbagai bisnis. Tingkatkan efisiensi dengan sistem booking modern dan mudah digunakan." />
+      <!-- Tailwind CDN -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+      <!-- Font Awesome CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <nav id="navbar" class="fixed top-0 left-0 w-full z-50">
+         <div class="nav-container">
+            <div class="logo">MeetUin</div>
+
+            <ul class="nav-links">
+               <li><a href="#home">Beranda</a></li>
+               <li><a href="#about">Tentang</a></li>
+               <li><a href="#services">Layanan</a></li>
+               <li><a href="#demo">Demo</a></li>
+               <li><a href="#pricing">Harga</a></li>
+               <li><a href="#contact">Kontak</a></li>
+            </ul>
+         </div>
+      </nav>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+         <div class="hero-content">
+            <h1>MeetUin: Solusi Booking Digital untuk Bisnis Anda</h1>
+            <p class="subtitle">Platform terlengkap untuk aplikasi booking modern yang meningkatkan efisiensi dan pengalaman pelanggan Anda</p>
+            <a href="#demo" class="cta-button">Lihat Demo Aplikasi</a>
+         </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section about" id="about">
+         <h2 class="fade-in">Tentang MeetUin</h2>
+
+         <div class="about-content flex flex-col md:flex-row items-center gap-12">
+            <!-- Text Content -->
+            <div class="about-text md:w-1/2 space-y-6">
+               <h3 class="fade-in text-2xl font-semibold">Mengapa Memilih MeetUin?</h3>
+
+               <p class="fade-in text-gray-700">
+                  MeetUin hadir sebagai solusi modern untuk digitalisasi proses booking di berbagai sektor usaha seperti barbershop, klinik, konsultasi, rental, dan banyak lagi. Kami mengerti pentingnya efisiensi, kemudahan, dan
+                  profesionalitas dalam setiap interaksi dengan pelanggan Anda.
+               </p>
+
+               <p class="text-gray-700">
+                  Dengan sistem dua sisi — <strong>Admin</strong> dan <strong>Customer</strong> — MeetUin memastikan data lebih tertata, laporan lebih akurat, dan pengelolaan layanan menjadi jauh lebih praktis. Admin dapat mengatur layanan,
+                  jadwal, harga umum maupun khusus, hingga mengekspor laporan ke Excel atau PDF, lengkap dengan filter tanggal untuk keperluan tutup buku.
+               </p>
+
+               <p class="fade-in text-gray-700">
+                  Teknologi antarmuka yang intuitif berpadu dengan notifikasi real-time memastikan Anda tidak melewatkan satu pun pelanggan. MeetUin bukan hanya alat kerja — tetapi mitra digital yang membantu Anda tumbuh lebih cepat dan
+                  terstruktur.
+               </p>
+
+               <!-- Fitur Utama -->
+               <div class="about-features space-y-6">
+                  <div class="feature-item flex items-start space-x-4">
+                     <div class="text-2xl text-primary">
+                        <i class="fas fa-bolt"></i>
+                     </div>
+                     <div>
+                        <strong class="block text-lg font-semibold">Efisiensi Maksimal</strong>
+                        <p class="text-gray-600">Otomatisasi proses booking menghemat waktu dan mengurangi kesalahan</p>
+                     </div>
+                  </div>
+
+                  <div class="feature-item flex items-start space-x-4">
+                     <div class="text-2xl text-primary">
+                        <i class="fas fa-mobile-alt"></i>
+                     </div>
+                     <div>
+                        <strong class="block text-lg font-semibold">Kemudahan Akses</strong>
+                        <p class="text-gray-600">Interface yang intuitif dan user-friendly untuk semua kalangan</p>
+                     </div>
+                  </div>
+
+                  <div class="feature-item flex items-start space-x-4">
+                     <div class="text-2xl text-primary">
+                        <i class="fas fa-rocket"></i>
+                     </div>
+                     <div>
+                        <strong class="block text-lg font-semibold">Tingkatkan Citra Bisnis</strong>
+                        <p class="text-gray-600">Tingkatkan citra profesional dan daya saing bisnis Anda</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Video Visual -->
+            <div class="about-visual fade-in md:w-1/2">
+               <div class="rounded-xl overflow-hidden shadow-xl">
+                  <video controls autoplay muted loop class="w-full h-auto" style="border-radius: 1rem">
+                     <source src="img/meetuin.mp4" type="video/mp4" />
+                     Browser Anda tidak mendukung pemutaran video.
+                  </video>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="section" id="services">
+         <h2>Jenis Aplikasi Booking</h2>
+         <div class="services-grid fade-in">
+            <div class="service-card">
+               <div class="service-icon"><i class="fas fa-scissors"></i></div>
+               <h3>Booking Barbershop</h3>
+               <p>Sistem booking khusus untuk barbershop dan salon dengan fitur pemilihan layanan, stylist, dan jadwal yang fleksibel.</p>
+               <ul>
+                  <li>✓ Pemilihan stylist favorit</li>
+                  <li>✓ Katalog layanan lengkap</li>
+                  <li>✓ Reminder otomatis</li>
+               </ul>
+            </div>
+            <div class="service-card">
+               <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+               <h3>Booking Konsultasi</h3>
+               <p>Platform ideal untuk konsultan, lawyer, dan profesional yang membutuhkan sistem appointment yang terorganisir.</p>
+               <ul>
+                  <li>✓ Video call terintegrasi</li>
+                  <li>✓ Manajemen dokumen</li>
+                  <li>✓ Payment gateway</li>
+               </ul>
+            </div>
+            <div class="service-card">
+               <div class="service-icon"><i class="fas fa-stethoscope"></i></div>
+               <h3>Booking Jadwal Dokter</h3>
+               <p>Solusi komprehensif untuk klinik dan rumah sakit dengan sistem antrian dan manajemen pasien yang efisien.</p>
+               <ul>
+                  <li>✓ Rekam medis digital</li>
+                  <li>✓ Sistem antrian cerdas</li>
+                  <li>✓ Notifikasi multi-channel</li>
+               </ul>
+            </div>
+            <div class="service-card">
+               <div class="service-icon"><i class="fas fa-dumbbell"></i></div>
+               <h3>Booking Gym & Fitness</h3>
+               <p>Aplikasi booking untuk gym, studio fitness, dan personal trainer dengan tracking progress terintegrasi.</p>
+               <ul>
+                  <li>✓ Class scheduling</li>
+                  <li>✓ Equipment booking</li>
+                  <li>✓ Progress tracking</li>
+               </ul>
+            </div>
+            <div class="service-card">
+               <div class="service-icon"><i class="fas fa-calendar-check"></i></div>
+               <h3>Booking Event & Workshop</h3>
+               <p>Platform untuk mengelola event, workshop, dan seminar dengan sistem ticketing dan manajemen peserta.</p>
+               <ul>
+                  <li>✓ Ticketing system</li>
+                  <li>✓ Kapasitas management</li>
+                  <li>✓ Check-in digital</li>
+               </ul>
+            </div>
+            <div class="service-card">
+               <div class="service-icon"><i class="fas fa-tools"></i></div>
+               <h3>Custom Booking</h3>
+               <p>Solusi booking yang dapat disesuaikan sepenuhnya dengan kebutuhan spesifik bisnis Anda.</p>
+               <ul>
+                  <li>✓ Full customization</li>
+                  <li>✓ API integration</li>
+                  <li>✓ Dedicated support</li>
+               </ul>
+            </div>
+         </div>
+      </section>
+
+      <!-- Demo Section -->
+      <section class="section demo" id="demo">
+         <h2>Live Demo Aplikasi</h2>
+         <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9">Rasakan pengalaman langsung menggunakan aplikasi booking MeetUin</p>
+         <div class="demo-container fade-in">
+            <div class="demo-preview"></div>
+            <p style="margin-bottom: 2rem">Demo ini menampilkan alur lengkap bagian antar muka saja dari aplikasi booking dengan interface yang intuitif dan responsif.</p>
+            <a href="https://mrioismail.github.io/LaundrySedulur.github.io/" target="_blank" class="cta-button"> Coba Demo Interaktif </a>
+         </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="section" id="pricing">
+         <h2>Harga & Paket</h2>
+         <div class="pricing-grid fade-in">
+            <div class="pricing-card">
+               <h3>Starter</h3>
+               <div class="price">Rp 299K<span class="price-period">/bulan</span></div>
+               <ul class="pricing-features">
+                  <li>Hingga 100 booking/bulan</li>
+                  <li>1 Jenis layanan</li>
+                  <li>Basic customization</li>
+                  <li>Email support</li>
+                  <li>Dashboard analytics</li>
+               </ul>
+               <a href="#contact" class="cta-button" style="background: #000">Pilih Paket</a>
+            </div>
+            <div class="pricing-card featured">
+               <h3>Professional</h3>
+               <div class="price">Rp 599K<span class="price-period">/bulan</span></div>
+               <ul class="pricing-features">
+                  <li>Unlimited booking</li>
+                  <li>Multiple layanan</li>
+                  <li>Advanced customization</li>
+                  <li>Priority support</li>
+                  <li>Advanced analytics</li>
+                  <li>Payment gateway</li>
+                  <li>Multi-location</li>
+               </ul>
+               <a href="#contact" class="cta-button" style="background: #fff; color: #153e35">Pilih Paket</a>
+            </div>
+            <div class="pricing-card">
+               <h3>Enterprise</h3>
+               <div class="price">Custom<span class="price-period">/bulan</span></div>
+               <ul class="pricing-features">
+                  <li>Unlimited everything</li>
+                  <li>Full customization</li>
+                  <li>API access</li>
+                  <li>24/7 dedicated support</li>
+                  <li>Custom integrations</li>
+                  <li>White label solution</li>
+                  <li>On-premise deployment</li>
+               </ul>
+               <a href="#contact" class="cta-button" style="background: #000">Hubungi Kami</a>
+            </div>
+         </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section faq">
+         <h2>Pertanyaan yang Sering Diajukan</h2>
+         <div class="faq-container fade-in">
+            <div class="faq-item">
+               <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span>Bagaimana cara memulai menggunakan MeetUin?</span>
+                  <span class="faq-toggle">+</span>
+               </div>
+               <div class="faq-answer">
+                  <div class="faq-answer-content">
+                     <p>Anda dapat memulai dengan menghubungi kami melalui WhatsApp. Tim kami akan membantu Anda memilih paket yang sesuai dan melakukan setup aplikasi dalam 24-48 jam.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="faq-item">
+               <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span>Apakah MeetUin dapat dikustomisasi sesuai kebutuhan bisnis saya?</span>
+                  <span class="faq-toggle">+</span>
+               </div>
+               <div class="faq-answer">
+                  <div class="faq-answer-content">
+                     <p>Ya, MeetUin dapat disesuaikan dengan kebutuhan spesifik bisnis Anda. Mulai dari branding, fitur khusus, hingga integrasi dengan sistem existing Anda.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="faq-item">
+               <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span>Bagaimana sistem pembayaran di MeetUin?</span>
+                  <span class="faq-toggle">+</span>
+               </div>
+               <div class="faq-answer">
+                  <div class="faq-answer-content">
+                     <p>Kami menyediakan berbagai opsi pembayaran termasuk transfer bank, e-wallet, dan sistem berlangganan bulanan/tahunan.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="faq-item">
+               <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span>Apakah ada dukungan teknis setelah implementasi?</span>
+                  <span class="faq-toggle">+</span>
+               </div>
+               <div class="faq-answer">
+                  <div class="faq-answer-content">
+                     <p>Tentu! Kami menyediakan dukungan teknis berkelanjutan, training untuk tim Anda, dan maintenance rutin untuk memastikan aplikasi berjalan optimal.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Contact Section test dulu -->
+      <section class="section contact" id="contact">
+         <h2>Hubungi Kami</h2>
+         <p style="font-size: 1.3rem; margin-bottom: 2rem">Tertarik dengan MeetUin? Mari diskusikan kebutuhan bisnis Anda!</p>
+         <div class="fade-in">
+            <a href="https://wa.me/628123456789?text=Halo%20MeetUin,%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20aplikasi%20booking%20digital%20Anda." class="whatsapp-button" target="_blank">
+               Hubungi via WhatsApp
+            </a>
+            <p style="margin-top: 2rem; opacity: 0.8">
+               Email: info@MeetUin.com<br />
+               Respon cepat dalam 1-2 jam kerja
+            </p>
+         </div>
+      </section>
+
+      <!-- Fixed WhatsApp Button -->
+      <a href="https://wa.me/628123456789?text=Halo%20MeetUin,%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20aplikasi%20booking%20digital%20Anda." class="fixed-whatsapp" target="_blank" title="Chat via WhatsApp">
+         <i class="fab fa-whatsapp fa-2x" style="color: white"></i>
+      </a>
+
+      <!-- Footer -->
+      <footer>
+         <p>&copy; 2025 MeetUin Indonesia, Semua hak dilindungi. | Solusi Booking Digital Terdepan di Indonesia</p>
+      </footer>
+
+      <script src="script.js"></script>
+   </body>
+</html>
