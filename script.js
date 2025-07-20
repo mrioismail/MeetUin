@@ -1,3 +1,12 @@
+// Hamburger Menu Toggle
+const hamburgerBtn = document.getElementById('hamburgerBtn')
+const navLinks = document.querySelector('.nav-links')
+
+hamburgerBtn.addEventListener('click', () => {
+   hamburgerBtn.classList.toggle('active')
+   navLinks.classList.toggle('show')
+})
+
 // Navbar scroll effect
 window.addEventListener('scroll', function () {
    const navbar = document.getElementById('navbar')
