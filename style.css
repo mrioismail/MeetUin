@@ -213,7 +213,7 @@ nav.scrolled .nav-links a {
 
 .cta-button {
    display: inline-block;
-   background: linear-gradient(45deg, #153e35);
+   background: linear-gradient(45deg, #153e35, #215a4d);
    color: white;
    padding: 1rem 2.5rem;
    text-decoration: none;
@@ -442,7 +442,7 @@ nav.scrolled .nav-links a {
 }
 
 .pricing-card.featured {
-   background: linear-gradient(135deg, #153e35);
+   background: linear-gradient(135deg, #153e35, #215a4d);
    color: white;
    transform: scale(1.05);
 }
@@ -708,6 +708,18 @@ nav.scrolled .nav-links a {
 
    .section {
       padding: 3rem 1rem;
+   }
+
+   .section h2 {
+      font-size: 2rem;
+   }
+
+   .about-text h3 {
+      font-size: 1.3rem;
+   }
+
+   .price {
+      font-size: 2rem;
    }
 
    .pricing-card {

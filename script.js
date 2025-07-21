@@ -31,28 +31,22 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
    })
 })
 
-// FAQ Toggle functionality
 function toggleFAQ(element) {
-   const answer = element.nextElementSibling
-   const toggle = element.querySelector('.faq-toggle')
+   const faqItem = element.parentElement
+   const answer = faqItem.querySelector('.faq-answer')
+   const toggle = faqItem.querySelector('.faq-toggle')
 
-   // Close all other FAQs
-   document.querySelectorAll('.faq-answer').forEach((faq) => {
-      if (faq !== answer) {
-         faq.classList.remove('active')
-      }
-   })
-   document.querySelectorAll('.faq-toggle').forEach((toggle_elem) => {
-      if (toggle_elem !== toggle) {
-         toggle_elem.classList.remove('active')
-         toggle_elem.textContent = '+'
-      }
-   })
+   const isActive = answer.classList.contains('active')
 
-   // Toggle current FAQ
-   answer.classList.toggle('active')
-   toggle.classList.toggle('active')
-   toggle.textContent = answer.classList.contains('active') ? '×' : '+'
+   // Tutup semua faq-answer lain
+   document.querySelectorAll('.faq-answer').forEach((a) => a.classList.remove('active'))
+   document.querySelectorAll('.faq-toggle').forEach((t) => t.classList.remove('active'))
+
+   // Jika sebelumnya tidak aktif, aktifkan yang diklik
+   if (!isActive) {
+      answer.classList.add('active')
+      toggle.classList.add('active')
+   }
 }
 
 // Scroll animations
