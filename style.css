@@ -461,7 +461,7 @@ nav.scrolled .nav-links a {
 }
 
 .price {
-   font-size: 3rem;
+   font-size: 2.5rem;
    font-weight: bold;
    margin: 1rem 0;
 }
@@ -479,6 +479,7 @@ nav.scrolled .nav-links a {
 .pricing-features li {
    padding: 0.5rem 0;
    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   font-size: 0.9rem;
 }
 
 .pricing-card.featured .pricing-features li {
