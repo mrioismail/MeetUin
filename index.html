@@ -14,6 +14,7 @@
       <link rel="stylesheet" href="style.css" />
    </head>
    <body>
+      <!-- navbar -->
       <nav id="navbar" class="fixed top-0 left-0 w-full z-50">
          <div class="nav-container">
             <div class="logo">MeetUin</div>
@@ -35,10 +36,11 @@
             </ul>
          </div>
       </nav>
+
       <!-- Hero Section -->
       <section class="hero bg-[#0f1f1a] text-white py-24" id="home">
          <div class="hero-content max-w-4xl mx-auto text-center px-4">
-            <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">MeetUin: Solusi Booking Digital untuk Bisnis Anda</h1>
+            <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">Solusi Booking Digital untuk Bisnis Anda</h1>
             <p class="subtitle text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8">Platform terlengkap untuk aplikasi booking modern yang meningkatkan efisiensi dan pengalaman pelanggan Anda</p>
             <a href="#demo" class="cta-button inline-block bg-green-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-green-600 transition duration-300"> Lihat Demo Aplikasi </a>
          </div>
@@ -101,7 +103,7 @@
             <div class="about-visual fade-in md:w-1/2">
                <div class="rounded-xl overflow-hidden shadow-xl">
                   <video controls autoplay muted loop class="w-full h-auto" style="border-radius: 1rem">
-                     <source src="img/meetuin.mp4" type="video/mp4" />
+                     <source src="video/meetuin.mp4" type="video/mp4" />
                      Browser Anda tidak mendukung pemutaran video.
                   </video>
                </div>
@@ -177,13 +179,26 @@
       </section>
 
       <!-- Demo Section -->
+      <!-- Demo Section -->
       <section class="section demo" id="demo">
          <h2>Live Demo Aplikasi</h2>
          <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9">Rasakan pengalaman langsung menggunakan aplikasi booking MeetUin</p>
-         <div class="demo-container fade-in">
-            <div class="demo-preview"></div>
-            <p style="margin-bottom: 2rem">Demo ini menampilkan alur lengkap bagian antar muka saja dari aplikasi booking dengan interface yang intuitif dan responsif.</p>
-            <a href="#" target="_blank" class="cta-button"> Coba Demo Interaktif </a>
+
+         <div class="demo-container">
+            <p style="margin-bottom: 2rem">Tampilan singkat Video Demo ini menampilkan alur lengkap dari customer booking sampai halaman admin, dengan interface yang intuitif dan responsif.</p>
+
+            <!-- Video Preview -->
+            <div class="demo-preview">
+               <video width="100%" height="auto" controls style="border-radius: 1rem">
+                  <source src="video/demo.mp4" type="video/mp4" />
+                  Browser Anda tidak mendukung video HTML5.
+               </video>
+            </div>
+
+            <!-- Simulation Text -->
+            <div class="demo-simulation"></div>
+
+            <a href="video/demo.mp4" target="_blank" class="cta-button" style="margin-top: 2rem"> Tonton Video Demo Aplikasi </a>
          </div>
       </section>
 
@@ -211,7 +226,7 @@
                   <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Tampil profesional di HP & laptop</li>
                   <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Include Landing page</li>
                   <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Nama brand & logo kamu sendiri</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Sudah termasuk domain MeetUin (contoh: meetuin.id/namaanda)</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Sudah termasuk domain MeetUin (contoh: meetuin/namaanda.com)</li>
                </ul>
                <p class="text-xs text-gray-500 italic mb-3 mt-2">Siap digunakan langsung. Bisa upgrade kapan saja.</p>
                <a href="#contact" class="cta-button" style="background: #000">Pilih Paket Ini</a>

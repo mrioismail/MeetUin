@@ -385,41 +385,83 @@ nav.scrolled .nav-links a {
    background: linear-gradient(135deg, #000 0%, #333 100%);
    color: white;
    text-align: center;
+   padding: 4rem 2rem;
 }
 
 .demo h2 {
    color: white;
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
 }
 
 .demo-container {
-   background: rgba(255, 255, 255, 0.1);
+   background: rgba(255, 255, 255, 0.08);
    border-radius: 20px;
    padding: 3rem;
    margin-top: 3rem;
    backdrop-filter: blur(10px);
    border: 1px solid rgba(255, 255, 255, 0.2);
+   max-width: 800px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .demo-preview {
    width: 100%;
-   height: 400px;
-   background: #fff;
+   background: transparent;
    border-radius: 10px;
-   margin: 2rem 0;
-   position: relative;
+   margin-bottom: 2rem;
    overflow: hidden;
    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-.demo-preview::before {
-   content: 'Live Demo Preview';
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-size: 1.5rem;
-   color: #333;
+.demo-simulation {
+   margin-top: 1rem;
+   color: #ccc;
+   font-size: 1.2rem;
    font-weight: bold;
+   animation: fadein 1s ease-in-out;
+}
+
+@keyframes pulse {
+   0% {
+      transform: scaleX(1);
+      opacity: 0.6;
+   }
+   50% {
+      transform: scaleX(1.2);
+      opacity: 1;
+   }
+   100% {
+      transform: scaleX(1);
+      opacity: 0.6;
+   }
+}
+
+@keyframes fadein {
+   from {
+      opacity: 0;
+      transform: translateY(10px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.cta-button {
+   display: inline-block;
+   background-color: #007bff;
+   color: white;
+   padding: 1rem 2rem;
+   border-radius: 30px;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: 1.1rem;
+   transition: all 0.3s ease;
+}
+.cta-button:hover {
+   background-color: #0056b3;
 }
 
 /* Pricing Section */
@@ -681,6 +723,14 @@ nav.scrolled .nav-links a {
 @media (max-width: 768px) {
    .hamburger {
       display: flex;
+   }
+
+   .hero .hero-content h1 {
+      font-size: 2rem;
+   }
+
+   .hero .hero-content p {
+      font-size: 1rem;
    }
 
    .nav-links {

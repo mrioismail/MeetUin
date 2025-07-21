@@ -114,18 +114,19 @@ pricingCards.forEach((card) => {
    pricingObserver.observe(card)
 })
 
-// Interactive demo simulation
-const demoPreview = document.querySelector('.demo-preview')
-if (demoPreview) {
+// Demo
+const demoSimulation = document.querySelector('.demo-simulation')
+if (demoSimulation) {
    let demoStep = 0
-   const demoSteps = ['Live Demo Preview - Pilih Layanan', 'Live Demo Preview - Pilih Jadwal', 'Live Demo Preview - Konfirmasi Booking', 'Live Demo Preview - Booking Berhasil']
+   const demoSteps = ['Live Demo - Pilih Layanan', 'Live Demo - Pilih Tanggal & Jam', 'Live Demo - Isi Data & Konfirmasi', 'Live Demo - Booking Berhasil']
 
    setInterval(() => {
-      demoPreview.innerHTML = `<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.2rem; color: #333; font-weight: bold; text-align: center; padding: 2rem;">
-                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">${demoSteps[demoStep]}</div>
-                    <div style="width: 60px; height: 4px; background: linear-gradient(45deg, #007bff, #0056b3); margin: 1rem auto; border-radius: 2px; animation: pulse 1s ease-in-out infinite;"></div>
-                    <div style="font-size: 1rem; opacity: 0.7;">Simulasi Interaksi Pengguna</div>
-                </div>`
+      demoSimulation.innerHTML = `
+            <div style="text-align:center;">
+               <div style="font-size: 1.5rem; margin-bottom: 1rem;">${demoSteps[demoStep]}</div>
+               <div style="width: 60px; height: 4px; background: linear-gradient(45deg, #007bff, #0056b3); margin: 1rem auto; border-radius: 2px; animation: pulse 1s ease-in-out infinite;"></div>
+               <div style="font-size: 1rem; opacity: 0.7;">Simulasi Interaksi Pengguna</div>
+            </div>`
       demoStep = (demoStep + 1) % demoSteps.length
    }, 3000)
 }
