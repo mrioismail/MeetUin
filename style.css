@@ -516,17 +516,24 @@ nav.scrolled .nav-links a {
 .pricing-features {
    list-style: none;
    margin: 2rem 0;
+   padding-left: 0;
+   text-align: left; /* Bikin fiturnya rata kiri */
 }
 
 .pricing-features li {
    padding: 0.5rem 0;
    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-   font-size: 0.9rem;
+   font-size: 0.95rem;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
 }
 
 .pricing-card.featured .pricing-features li {
    border-color: rgba(255, 255, 255, 0.2);
 }
+
+/* test ajajaaaa */
 
 /* FAQ Section */
 .faq {
