@@ -31,17 +31,23 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
    })
 })
 
+// js masalah dan solusi
+document.querySelectorAll('.accordion-header').forEach((button) => {
+   button.addEventListener('click', () => {
+      const item = button.parentElement
+      item.classList.toggle('active')
+   })
+})
+
+// faq
 function toggleFAQ(element) {
    const faqItem = element.parentElement
    const answer = faqItem.querySelector('.faq-answer')
    const toggle = faqItem.querySelector('.faq-toggle')
-
    const isActive = answer.classList.contains('active')
-
    // Tutup semua faq-answer lain
    document.querySelectorAll('.faq-answer').forEach((a) => a.classList.remove('active'))
    document.querySelectorAll('.faq-toggle').forEach((t) => t.classList.remove('active'))
-
    // Jika sebelumnya tidak aktif, aktifkan yang diklik
    if (!isActive) {
       answer.classList.add('active')
@@ -54,7 +60,6 @@ const observerOptions = {
    threshold: 0.1,
    rootMargin: '0px 0px -50px 0px',
 }
-
 const observer = new IntersectionObserver(function (entries) {
    entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -83,7 +88,6 @@ const serviceObserver = new IntersectionObserver(
    },
    { threshold: 0.1 }
 )
-
 serviceCards.forEach((card) => {
    card.style.opacity = '0'
    card.style.transform = 'translateY(30px)'

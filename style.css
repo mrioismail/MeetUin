@@ -245,6 +245,74 @@ nav.scrolled .nav-links a {
    box-shadow: 0 15px 40px #215a4d;
 }
 
+/* masalah dan solusi */
+.problems-solutions {
+   padding: 3rem 1rem;
+   background-color: #f9f9f9;
+   border-radius: 1rem;
+}
+
+.section-title {
+   text-align: center;
+   font-size: 1.8rem;
+   font-weight: 700;
+   margin-bottom: 2rem;
+   color: #333;
+}
+
+.accordion {
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.accordion-item {
+   background-color: #fff;
+   border-radius: 0.75rem;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+   margin-bottom: 1rem;
+   overflow: hidden;
+}
+
+.accordion-header {
+   width: 100%;
+   background: none;
+   border: none;
+   padding: 1rem 1.5rem;
+   font-size: 1rem;
+   text-align: left;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 600;
+   cursor: pointer;
+   color: #333;
+   background-color: #f0f0f0;
+   transition: background 0.2s ease;
+}
+
+.accordion-header:hover {
+   background-color: #e6e6e6;
+}
+
+.accordion-body {
+   padding: 1rem 1.5rem;
+   display: none;
+   font-size: 0.95rem;
+   color: #555;
+   background-color: #fff;
+}
+
+.accordion-item.active .accordion-body {
+   display: block;
+}
+
+.accordion-item.active .arrow {
+   transform: rotate(180deg);
+}
+.arrow {
+   transition: transform 0.3s ease;
+}
+
 /* Section Styles */
 .section {
    padding: 5rem 2rem;
