@@ -1,7 +1,7 @@
 :root {
    /* Primary Colors - Deep Navy Theme */
-   --primary-dark: #0a1628; /* Deep Navy */
-   --primary-medium: #1a202c; /* Medium Navy */
+   --primary: #00796b; /* Hijau Tosca */
+   --primary-medium: #153e35; /* Medium Navy */
    --primary-light: #2d3748; /* Light Navy */
 
    /* Accent Colors */
@@ -41,38 +41,54 @@ html {
    scroll-behavior: smooth;
 }
 
-/* hamberger menu */
 .hamburger {
    display: none;
    flex-direction: column;
    justify-content: center;
-   gap: 6px;
+   align-items: center;
    width: 30px;
    height: 25px;
    cursor: pointer;
+   position: relative;
    z-index: 9999;
 }
 
 .hamburger span {
-   height: 3px;
+   display: block;
+   position: absolute;
    width: 100%;
-   background: #000;
+   height: 3px;
+   background-color: #000;
    border-radius: 10px;
    transition: all 0.4s ease;
 }
 
-nav.scrolled .hamburger span {
-   background: #fff;
+/* Posisi default */
+.hamburger span:nth-child(1) {
+   top: 0;
 }
 
-.hamburger.active span:nth-child(1) {
-   transform: rotate(45deg) translate(5px, 5px);
+.hamburger span:nth-child(2) {
+   top: 11px;
 }
+
+.hamburger span:nth-child(3) {
+   top: 22px;
+}
+
+/* Saat aktif */
+.hamburger.active span:nth-child(1) {
+   transform: rotate(45deg);
+   top: 11px;
+}
+
 .hamburger.active span:nth-child(2) {
    opacity: 0;
 }
+
 .hamburger.active span:nth-child(3) {
-   transform: rotate(-45deg) translate(6px, -6px);
+   transform: rotate(-45deg);
+   top: 11px;
 }
 
 /* Navigation */
@@ -88,8 +104,8 @@ nav {
 }
 
 nav.scrolled {
-   background: rgba(0, 0, 0, 0.95);
-   color: white;
+   background: var(--white);
+   color: #000;
 }
 
 .nav-container {
@@ -102,14 +118,16 @@ nav.scrolled {
 }
 
 .logo {
-   font-size: 1.8rem;
-   font-weight: bold;
-   color: #000;
+   font-size: 1.5rem; /* Lebih besar agar lebih menonjol */
+   font-weight: 700; /* Tebal = lebih branding */
+   font-family: 'Inter', sans-serif; /* Modern dan clean */
+   color: var(--primary); /* Warna brand */
+   letter-spacing: -0.5px; /* Lebih rapat = elegan */
    transition: color 0.3s ease;
 }
 
 nav.scrolled .logo {
-   color: #fff;
+   color: #000;
 }
 
 .nav-links {
@@ -127,7 +145,7 @@ nav.scrolled .logo {
 }
 
 nav.scrolled .nav-links a {
-   color: #fff;
+   color: #000;
 }
 
 .nav-links a::after {
@@ -137,7 +155,7 @@ nav.scrolled .nav-links a {
    height: 2px;
    bottom: -5px;
    left: 0;
-   background: #082c38;
+   background: var(--primary);
    transition: width 0.3s ease;
 }
 
@@ -213,7 +231,7 @@ nav.scrolled .nav-links a {
 
 .cta-button {
    display: inline-block;
-   background: linear-gradient(45deg, #153e35, #215a4d) !important;
+   background: linear-gradient(45deg, #00796b, #153e35) !important;
    color: white;
    padding: 1rem 2.5rem;
    text-decoration: none;
@@ -242,7 +260,7 @@ nav.scrolled .nav-links a {
 
 .cta-button:hover {
    transform: translateY(-3px);
-   box-shadow: 0 15px 40px #215a4d;
+   box-shadow: 0 10px 30px #00796b;
 }
 
 /* masalah dan solusi */
@@ -326,6 +344,7 @@ nav.scrolled .nav-links a {
    margin-bottom: 3rem;
    font-weight: 700;
    position: relative;
+   color: #00796b;
 }
 
 .section h2::after {
@@ -337,6 +356,10 @@ nav.scrolled .nav-links a {
    bottom: -10px;
    left: 50%;
    transform: translateX(-50%);
+}
+
+.bg-fitur {
+   background: var(--primary);
 }
 
 /* About Section */
@@ -359,7 +382,7 @@ nav.scrolled .nav-links a {
 .about-text h3 {
    font-size: 1.5rem;
    margin-bottom: 1rem;
-   color: #153e35;
+   color: #00796b;
 }
 
 .about-text p {
@@ -415,7 +438,7 @@ nav.scrolled .nav-links a {
    left: 0;
    width: 100%;
    height: 4px;
-   background: linear-gradient(45deg, #153e35, #215a4d);
+   background: linear-gradient(45deg, #00796b, #00796b);
    transform: scaleX(0);
    transition: transform 0.3s ease;
 }
@@ -432,7 +455,7 @@ nav.scrolled .nav-links a {
 .service-icon {
    width: 80px;
    height: 80px;
-   background: linear-gradient(45deg, #153e35, #215a4d);
+   background: linear-gradient(45deg, #153e35, #00796b);
    border-radius: 50%;
    display: flex;
    align-items: center;
@@ -450,7 +473,7 @@ nav.scrolled .nav-links a {
 
 /* Demo Section */
 .demo {
-   background: linear-gradient(135deg, #000 0%, #333 100%);
+   background: linear-gradient(135deg, #00796b 0%, #333 100%);
    color: white;
    text-align: center;
    padding: 4rem 2rem;
@@ -552,7 +575,7 @@ nav.scrolled .nav-links a {
 }
 
 .pricing-card.featured {
-   background: linear-gradient(135deg, #153e35, #215a4d) !important;
+   background: linear-gradient(135deg, #00796b, #00796b) !important;
    color: white;
    transform: scale(1.05);
 }
@@ -665,68 +688,45 @@ nav.scrolled .nav-links a {
    color: white;
 }
 
-.whatsapp-button {
-   display: inline-flex;
-   align-items: center;
-   gap: 1rem;
-   background: #25d366;
-   color: white;
-   padding: 1rem 2rem;
-   text-decoration: none;
-   border-radius: 50px;
-   font-weight: 600;
-   font-size: 1.2rem;
-   transition: all 0.3s ease;
-   margin-top: 2rem;
-}
-
-.whatsapp-button:hover {
-   background: #128c7e;
-   transform: scale(1.05);
-}
-
-/* Fixed WhatsApp Button */
-.fixed-whatsapp {
+/* Tombol Chat Bulat di Pojok */
+.whatsapp-float {
    position: fixed;
    bottom: 20px;
    right: 20px;
-   z-index: 999;
-   width: 60px;
-   height: 60px;
-   background: #25d366;
+   width: 52px;
+   height: 52px;
+   background-color: #00796b; /* hijau tosca */
+   color: white;
    border-radius: 50%;
    display: flex;
    align-items: center;
    justify-content: center;
+   font-size: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   z-index: 999;
    text-decoration: none;
-   box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-   transition: transform 0.3s ease;
-   animation: pulse 1.5s ease-out infinite;
 }
 
-.fixed-whatsapp:hover {
-   background: #128c7e;
-   transform: scale(1.1);
-   box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+/* Animasi detak halus */
+.heartbeat {
+   animation: smoothPulse 2.5s ease-in-out infinite;
 }
 
-.fixed-whatsapp span {
-   font-size: 1.5rem;
-   color: white;
-}
-
-@keyframes pulse {
+@keyframes smoothPulse {
    0% {
       transform: scale(1);
-      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+   }
+   25% {
+      transform: scale(1.05);
    }
    50% {
       transform: scale(1.1);
-      box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+   }
+   75% {
+      transform: scale(1.05);
    }
    100% {
       transform: scale(1);
-      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
    }
 }
 
@@ -842,7 +842,11 @@ nav.scrolled .nav-links a {
    }
 
    .section h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
+   }
+
+   .section h3 {
+      font-size: 1.3rem;
    }
 
    .about-text h3 {

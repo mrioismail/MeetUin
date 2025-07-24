@@ -9,15 +9,15 @@
       <script src="https://cdn.tailwindcss.com"></script>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
       <!-- Font Awesome CDN -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
       <link rel="stylesheet" href="style.css" />
    </head>
    <body>
       <!-- navbar -->
-      <nav id="navbar" class="fixed top-0 left-0 w-full z-50">
+      <nav id="navbar" class="fixed top-0 left-0 w-full z-50 shadow-md bg-white">
          <div class="nav-container">
-            <div class="logo">MeetUin</div>
+            <h1 class="text-2xl font-bold logo"><span class="text-teal-600">Meet</span><span class="text-gray-900">Uin</span></h1>
 
             <!-- Hamburger Icon -->
             <div class="hamburger" id="hamburgerBtn">
@@ -46,63 +46,61 @@
          </div>
       </section>
 
-      <!-- About Section -->
-      <section class="section about" id="about">
-         <h2 class="fade-in">Tentang MeetUin</h2>
+      <!-- Mengapa Memilih MeetUin -->
+      <section class="section bg-white py-16" id="why-meetuin">
+         <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-4 fade-in">Mengapa Memilih MeetUin?</h2>
+            <p class="text-gray-700 fade-in mb-3">
+               MeetUin adalah solusi modern untuk digitalisasi booking, dirancang untuk mempermudah setiap pertemuan dan mengoptimalkan jadwal bisnis Anda. Kami memahami pentingnya efisiensi, kemudahan, dan profesionalisme dalam setiap
+               interaksi dengan pelanggan.
+            </p>
+            <p class="text-gray-700 fade-in">MeetUin bukan sekadar aplikasi, tapi <strong>mitra digital</strong> yang membantu bisnis Anda tumbuh lebih cepat dan terstruktur.</p>
+         </div>
+      </section>
 
-         <div class="about-content flex flex-col md:flex-row items-center gap-12">
-            <!-- Text Content -->
-            <div class="about-text md:w-1/2 space-y-6">
-               <h3 class="fade-in text-2xl font-semibold">Mengapa Memilih MeetUin?</h3>
-
-               <p class="fade-in text-gray-700">
-                  MeetUin adalah solusi modern untuk digitalisasi booking, dirancang untuk mempermudah setiap pertemuan dan mengoptimalkan jadwal bisnis Anda. Kami memahami pentingnya efisiensi, kemudahan, dan profesionalisme dalam setiap
-                  interaksi dengan pelanggan.
-               </p>
-
-               <p class="fade-in text-gray-700">MeetUin bukan sekadar aplikasi, tapi <strong>mitra digital</strong> yang membantu bisnis Anda tumbuh lebih cepat dan terstruktur.</p>
-
-               <!-- Fitur Utama -->
-               <div class="about-features space-y-6 fade-in">
-                  <div class="feature-item flex items-start space-x-4">
-                     <div class="text-2xl text-primary">
-                        <i class="fas fa-bolt"></i>
-                     </div>
-                     <div>
-                        <strong class="block text-lg font-semibold">Efisiensi Maksimal</strong>
-                        <p class="text-gray-600">Otomatisasi proses booking menghemat waktu dan mengurangi kesalahan</p>
-                     </div>
+      <!-- Fitur Utama -->
+      <section class="section bg-fitur text-white py-16 rounded-2xl mx-4 md:mx-8" id="fitur-utama">
+         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6 md:px-8">
+            <!-- Daftar Fitur -->
+            <div class="space-y-6 fade-in">
+               <!-- Fitur 1 -->
+               <div class="flex items-start space-x-4 pb-6">
+                  <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white/20 text-white text-lg">
+                     <i class="fas fa-bolt"></i>
                   </div>
-
-                  <div class="feature-item flex items-start space-x-4 fade-in">
-                     <div class="text-2xl text-primary">
-                        <i class="fas fa-mobile-alt"></i>
-                     </div>
-                     <div>
-                        <strong class="block text-lg font-semibold">Kemudahan Akses</strong>
-                        <p class="text-gray-600">Interface yang intuitif dan user-friendly untuk semua kalangan</p>
-                     </div>
+                  <div>
+                     <h4 class="font-semibold text-lg">Efisiensi Maksimal</h4>
+                     <p class="text-white/80 text-sm">Otomatisasi proses booking menghemat waktu dan mengurangi kesalahan</p>
                   </div>
+               </div>
 
-                  <div class="feature-item flex items-start space-x-4 fade-in">
-                     <div class="text-2xl text-primary">
-                        <i class="fas fa-rocket"></i>
-                     </div>
-                     <div>
-                        <strong class="block text-lg font-semibold">Tingkatkan Citra Bisnis</strong>
-                        <p class="text-gray-600">Tingkatkan citra profesional dan daya saing bisnis Anda</p>
-                     </div>
+               <!-- Fitur 2 -->
+               <div class="flex items-start space-x-4 border-t border-white/20 pt-6 pb-6">
+                  <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white/20 text-white text-lg">
+                     <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <div>
+                     <h4 class="font-semibold text-lg">Kemudahan Akses</h4>
+                     <p class="text-white/80 text-sm">Interface yang intuitif dan user-friendly untuk semua kalangan</p>
+                  </div>
+               </div>
+
+               <!-- Fitur 3 -->
+               <div class="flex items-start space-x-4 border-t border-white/20 pt-6">
+                  <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white/20 text-white text-lg">
+                     <i class="fas fa-rocket"></i>
+                  </div>
+                  <div>
+                     <h4 class="font-semibold text-lg">Tingkatkan Citra Bisnis</h4>
+                     <p class="text-white/80 text-sm">Tingkatkan citra profesional dan daya saing bisnis Anda</p>
                   </div>
                </div>
             </div>
 
-            <!-- Video Visual -->
-            <div class="about-visual fade-in md:w-1/2">
-               <div class="rounded-xl overflow-hidden shadow-xl">
-                  <video controls autoplay muted loop class="w-full h-auto" style="border-radius: 1rem">
-                     <source src="video/meetuin.mp4" type="video/mp4" />
-                     Browser Anda tidak mendukung pemutaran video.
-                  </video>
+            <!-- Video atau Gambar -->
+            <div class="fade-in">
+               <div class="rounded-xl overflow-hidden">
+                  <img src="img/meetuin.png" alt="MeetUin" class="w-full h-auto" />
                </div>
             </div>
          </div>
@@ -194,61 +192,31 @@
                <div class="service-icon"><i class="fas fa-scissors"></i></div>
                <h3>Booking Barbershop dan Salon</h3>
                <p>Sistem booking khusus untuk barbershop dan salon dengan fitur pemilihan layanan, stylist, dan jadwal yang fleksibel.</p>
-               <ul>
-                  <li>✓ Pemilihan stylist favorit</li>
-                  <li>✓ Katalog layanan lengkap</li>
-                  <li>✓ Mengatur Harga spesifik per stylist</li>
-               </ul>
             </div>
             <div class="service-card">
                <div class="service-icon"><i class="fas fa-briefcase"></i></div>
                <h3>Booking Konsultasi & Janji Temu</h3>
                <p>Permudah pengaturan jadwal untuk konsultasi, bimbingan, atau pertemuan profesional Anda. Cocok untuk dosen, guru les, konsultan, dan berbagai ahli lainnya.</p>
-               <ul>
-                  <li>✓ Video call terintegrasi</li>
-                  <li>✓ Manajemen dokumen</li>
-                  <li>✓ Pembayaran via Payment Gateway</li>
-               </ul>
             </div>
             <div class="service-card">
                <div class="service-icon"><i class="fas fa-stethoscope"></i></div>
                <h3>Booking & Manajemen Pasien Klinik</h3>
                <p>Solusi terpadu untuk klinik, puskesmas, dan rumah sakit kecil, menghadirkan efisiensi dalam penjadwalan dan pengelolaan pasien.</p>
-               <ul>
-                  <li>✓ Rekam Medis Digital</li>
-                  <li>✓ Sistem Antrean Otomatis</li>
-                  <li>✓ Notifikasi janji temu</li>
-               </ul>
             </div>
             <div class="service-card">
                <div class="service-icon"><i class="fas fa-dumbbell"></i></div>
                <h3>Booking Gym & Fitness</h3>
                <p>Sistem booking cerdas untuk gym, studio kebugaran, dan personal trainer. Atur jadwal, kelola kelas, dan bantu member capai targetnya!</p>
-               <ul>
-                  <li>✓ Jadwal Kelas Fleksibel</li>
-                  <li>✓ Reservasi Alat Otomatis</li>
-                  <li>✓ Pelacakan Progres Member</li>
-               </ul>
             </div>
             <div class="service-card">
                <div class="service-icon"><i class="fas fa-calendar-check"></i></div>
                <h3>Booking Event & Workshop</h3>
                <p>Platform untuk mengelola event, workshop, dan seminar dengan sistem ticketing dan manajemen peserta.</p>
-               <ul>
-                  <li>✓ Sistem tiket mudah</li>
-                  <li>✓ Batasi jumlah peserta</li>
-                  <li>✓ Check-in digital</li>
-               </ul>
             </div>
             <div class="service-card">
                <div class="service-icon"><i class="fas fa-tools"></i></div>
                <h3>Custom Booking</h3>
                <p>Solusi booking yang dapat disesuaikan sepenuhnya dengan kebutuhan spesifik bisnis Anda.</p>
-               <ul>
-                  <li>✓ Fitur bisa diatur sesuai kebutuhan</li>
-                  <li>✓ Integrasi dengan sistem Anda</li>
-                  <li>✓ Dukungan khusus tim ahli</li>
-               </ul>
             </div>
          </div>
       </section>
@@ -259,7 +227,7 @@
          <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9">Rasakan pengalaman langsung menggunakan aplikasi booking MeetUin</p>
 
          <div class="demo-container">
-            <p style="margin-bottom: 2rem">Tampilan singkat Video Demo ini menampilkan alur lengkap dari customer booking sampai halaman admin, dengan interface yang intuitif dan responsif.</p>
+            <p style="margin-bottom: 2rem">Simulasi ini menggambarkan sistem booking fleksibel yang bisa digunakan untuk berbagai kebutuhan bisnis.</p>
 
             <!-- Video Preview -->
             <div class="demo-preview">
@@ -272,40 +240,45 @@
             <!-- Simulation Text -->
             <div class="demo-simulation"></div>
 
-            <a href="video/demo.mp4" target="_blank" class="cta-button" style="margin-top: 2rem"> Tonton Video Demo Aplikasi </a>
+            <a href="#" target="_blank" class="cta-button" style="margin-top: 2rem"> Tonton Video Demo Aplikasi </a>
          </div>
       </section>
 
       <!-- Pricing Section -->
       <section class="section" id="pricing">
          <h2>Harga & Paket</h2>
-         <p class="text-center text-gray-600 max-w-2xl mx-auto mb-8 text-lg">Semua paket di bawah ini cukup dibayar sekali (bukan langganan), dan dapat disesuaikan dengan kebutuhan usaha Anda.</p>
-         <p class="text-center text-gray-500 text-sm italic max-w-xl mx-auto mt-2 mb-8">
-            Beberapa fitur dalam paket dapat berubah atau disesuaikan berdasarkan kebutuhan spesifik usaha Anda. Kami terbuka untuk diskusi dan penyesuaian sebelum pengerjaan dimulai.
+         <p class="text-center text-gray-600 max-w-2xl mx-auto mb-8 text-lg">
+            Semua paket di bawah ini langsung siap pakai dan bisa disesuaikan dengan kebutuhan bisnis Anda — tanpa biaya langganan bulanan. Kami paham bahwa setiap usaha itu unik. Karena itu, kami terbuka untuk penyesuaian fitur, tampilan,
+            dan alur sesuai model bisnis Anda.
          </p>
+         <p class="text-center text-gray-500 text-sm italic max-w-xl mx-auto mt-2 mb-8">MeetUin hadir bukan sekadar aplikasi — tapi solusi lengkap yang dibentuk sesuai kebutuhan dan cara kerja usaha Anda.</p>
 
          <div class="pricing-grid fade-in">
             <!-- Starter -->
             <div class="pricing-card">
                <h3>Starter</h3>
                <p class="text-sm text-gray-600 mb-2">Cocok untuk bisnis yang baru mulai atau satu cabang.</p>
-               <div class="price">Rp 999K<span class="price-period"> /1x bayar</span></div>
+               <div class="price">Rp 499K<span class="price-period">/tahun</span></div>
                <ul class="pricing-features">
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> 1 Cabang</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Halaman Admin</li>
+                  <li><i class="fas fa-bell text-yellow-400 mr-2"></i> Perpanjangan 299K/tahun</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> 1 Cabang / Lokasi</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Akses Admin Lengkap</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Form Booking + WhatsApp</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Dashboard & Riwayat Booking</li>
                   <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Notifikasi Otomatis di Sistem</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Dashboard & Laporan Ringkas</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Form booking + WhatsApp langsung</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Riwayat booking</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Sistem pembayaran, upload bukti + riwayat pembayaran</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Tampil profesional di HP & laptop</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Include Landing page</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Upload & Cek Bukti Pembayaran</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Tersedia Tampilan HP & Laptop</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Desain Responsive & Mobile Friendly</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Branding Nama & Logo Bisnis Anda</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Landing Page Profesional</li>
                   <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Nama brand & logo kamu sendiri</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Bantuan Copywriting</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Gratis domain MeetUin 1 Tahun (contoh: meetuin/namaanda)</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Fitur Layanan + Jam Booking</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Riwayat Pelanggan</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Gratis Bantuan Copywriting & Setup Awal</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Gratis Domain MeetUin (contoh: namaanda/meetuin.id)</li>
                </ul>
                <p class="text-xs text-gray-500 italic mb-3 mt-2">Siap digunakan langsung. Bisa upgrade kapan saja.</p>
-               <a href="#contact" class="cta-button" style="background: #000">Pilih Paket Ini</a>
+               <a href="#contact" class="cta-button" style="background: #000">Pesan Sekarang</a>
             </div>
 
             <!-- Professional -->
@@ -316,20 +289,28 @@
 
                <h3>Professional</h3>
                <p class="text-sm text-gray-400 mb-2">Paket paling ideal untuk Anda yang ingin bisnisnya terlihat rapi, modern, dan terpercaya.</p>
-               <div class="price">Rp 2.999K<span class="price-period">/1x bayar</span></div>
+               <div class="price">Rp 1.499K<span class="price-period">/tahun</span></div>
                <ul class="pricing-features">
+                  <li><i class="fas fa-bell text-yellow-400 mr-2"></i> Perpanjangan 1.000K/tahun</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Semua fitur di Paket Starter</li>
                   <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Multi login (Admin & Customer)</li>
                   <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Multi-Cabang (Lebih dari 1 Lokasi)</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Banyak Layanan di setiap lokasi</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Notifikasi otomatis (WA, Email, SMS)</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Dashboard & Laporan Lengkap</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Integrasi Pembayaran Online</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Tampilan lebih interaktif & premium</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Include Invoice Profesional</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Banyak Layanan & Penjadwalan per Cabang</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Fitur Booking Khusus Capster / Pegawai</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Notifikasi Otomatis via WhatsApp + Email</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Integrasi Pembayaran Online (QRIS, Transfer Bank, dll)</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Invoice Profesional Otomatis</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Halaman Konfirmasi Booking</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Otomatis Update Status Booking</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Filter Booking Berdasarkan Tanggal/Status</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Filter Laporan Berdasarkan Tanggal awal dan Tanggal Akhir</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Fitur Export ke Excel & PDF</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Laporan & Grafik Penjualan</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Sistem Riwayat Pembayaran</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Integrasi Kalender Opsional</li>
                   <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Pengaturan Lanjut Aplikasi</li>
                   <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Dukungan Prioritas</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Bantuan Copywriting</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Bebas pilih: domain MeetUin (gratis 1 tahun) atau domain sendiri (+Rp 150K/tahun)</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Domain Custom (opsional)</li>
                </ul>
                <p class="text-xs text-gray-400 italic mb-3 mt-2">Solusi ideal untuk bisnis yang mengutamakan profesionalitas, efisiensi, dan pengalaman pelanggan yang terpercaya.</p>
                <a href="#contact" class="cta-button">Pilih Paket Ini</a>
@@ -352,7 +333,7 @@
                <a href="#contact" class="cta-button" style="background: #000">Hubungi Kami</a>
             </div>
          </div>
-         <div class="text-center mt-6">
+         <div class="text-center mt-10">
             <p class="text-sm text-gray-400 italic">
                💡 <strong>Note:</strong> Semua paket dirancang untuk membantu pelaku usaha tampil lebih profesional dan dipercaya pelanggan.<br />
                Jika ragu, Anda bisa mulai dari paket <strong>Starter</strong> dulu.
@@ -442,9 +423,14 @@
          </div>
       </section>
 
-      <!-- Fixed WhatsApp Button -->
-      <a href="https://wa.me/6282354884444?text=Halo%20MeetUin,%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20aplikasi%20booking%20digital%20Anda." class="fixed-whatsapp" target="_blank" title="Chat via WhatsApp">
-         <i class="fab fa-whatsapp fa-2x" style="color: white"></i>
+      <!-- Tombol WhatsApp Tetap di Pojok -->
+      <a
+         href="https://wa.me/6282354884444?text=Halo%20MeetUin,%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20aplikasi%20booking%20digital%20Anda."
+         class="whatsapp-float heartbeat"
+         target="_blank"
+         title="Chat via WhatsApp"
+      >
+         <i class="fas fa-comment-dots"></i>
       </a>
 
       <!-- Footer -->
